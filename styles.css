@@ -199,6 +199,13 @@ h2 {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.button.instagram-button {
+  border-color: rgba(255, 255, 255, 0.34);
+  background-color: #d62976;
+  background-image: linear-gradient(45deg, #feda75 0%, #fa7e1e 24%, #d62976 50%, #962fbf 74%, #4f5bd5 100%);
+  box-shadow: 0 12px 30px rgba(214, 41, 118, 0.34);
+}
+
 .button.dark {
   color: var(--ink);
   border-color: rgba(20, 17, 15, 0.35);
@@ -560,21 +567,51 @@ h2 {
   }
 
   .hero {
-    min-height: 88svh;
+    min-height: 92svh;
+    align-items: end;
+  }
+
+  .hero img {
+    object-position: 22% center;
+    transform: scale(1.06) translateX(0);
+  }
+
+  .hero::after {
+    background:
+      linear-gradient(90deg, rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.08) 64%, rgba(0, 0, 0, 0)),
+      linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0) 42%);
   }
 
   .hero-content {
-    width: min(520px, calc(100% - 30px));
-    margin: 0 15px 6vh;
+    width: min(340px, calc(100% - 30px));
+    margin: 0 15px 2vh;
   }
 
+  .hero-content .eyebrow {
+    font-size: 0.56rem;
+  }
+
+
   h1 {
-    font-size: clamp(4.4rem, 19vw, 6.8rem);
+    max-width: 7.3ch;
+    font-size: clamp(2.95rem, 13.2vw, 4.1rem);
   }
 
   .hero-copy {
-    max-width: 34rem;
-    font-size: 1.1rem;
+    max-width: 20.5rem;
+    font-size: 0.92rem;
+    line-height: 1.34;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-actions .button {
+    min-height: 42px;
+    padding: 0 10px;
+    font-size: 0.76rem;
   }
 
   .intro-section,
