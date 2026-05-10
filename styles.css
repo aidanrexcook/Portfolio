@@ -53,10 +53,28 @@ video {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0));
 }
 
+.brand-lockup {
+  display: grid;
+  gap: 3px;
+}
+
 .brand {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.25rem;
   letter-spacing: 0;
+}
+
+.brand-tagline {
+  color: var(--gold);
+  font-size: 0.58rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.mobile-tagline {
+  display: none;
 }
 
 
@@ -569,9 +587,19 @@ h2 {
     display: block;
   }
 
-  .brand {
-    display: inline-block;
+  .brand-lockup {
+    display: block;
     margin-bottom: 12px;
+  }
+
+  .desktop-tagline {
+    display: none;
+  }
+
+  .mobile-tagline {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.56rem;
   }
 
   .nav-links {
