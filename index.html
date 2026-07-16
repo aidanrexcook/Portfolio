@@ -9,7 +9,7 @@
       content="Actor portfolio with cinematic headshots, reel video, selected credits, and booking contact."
     >
     <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="stylesheet" href="styles.css?v=20260509-21">
+    <link rel="stylesheet" href="styles.css?v=20260715-6">
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
@@ -21,7 +21,7 @@
         <a href="#headshots">Headshots</a>
         <a href="#reel">Reel</a>
         <a href="#training">Training</a>
-        <a href="#contact">Representation</a>
+        <a href="#contact">Contact</a>
       </nav>
       <span class="brand-tagline mobile-tagline">LA based actor</span>
     </header>
@@ -31,11 +31,11 @@
         <picture>
           <source
             media="(max-width: 700px)"
-            srcset="assets/hero-headshot.JPG"
+            srcset="assets/arc-main-headshot.jpg"
           >
           <img
-            src="assets/hero-headshot.JPG"
-            alt="Aidan Rex Cook looking out a window with a reflected portrait in the glass"
+            src="assets/arc-main-headshot.jpg"
+            alt="Close-up headshot of Aidan Rex Cook in a navy zip jacket"
           >
         </picture>
         <div class="hero-content">
@@ -52,7 +52,7 @@
               target="_blank"
               rel="noopener"
             >Resume</a>
-            <a class="button secondary" href="#contact">Representation</a>
+            <a class="button secondary" href="#contact">Contact</a>
             <a
               class="button secondary instagram-button"
               href="https://www.instagram.com/aidanrexcook/"
@@ -89,51 +89,37 @@
           <a class="social-link section-social" href="https://www.instagram.com/aidanrexcook/" target="_blank" rel="noopener">@aidanrexcook</a>
         </div>
         <div class="headshot-grid">
-          <button
-            class="headshot-card is-active"
-            type="button"
-            data-image="assets/headshot-theatrical.JPG"
-            data-label="Theatrical headshot"
-          >
+          <figure class="headshot-card">
+            <img
+              src="assets/headshot-green.jpg"
+              alt="Headshot of Aidan Rex Cook in a gold shirt against a green background"
+            >
+          </figure>
+          <figure class="headshot-card">
+            <img
+              src="assets/headshot-navy-soft.jpg"
+              alt="Headshot of Aidan Rex Cook in a navy jacket with a subtle smile"
+            >
+          </figure>
+          <figure class="headshot-card">
             <img
               src="assets/headshot-theatrical.JPG"
               alt="Theatrical headshot of Aidan Rex Cook"
             >
-            <span>Theatrical</span>
-          </button>
-          <button
-            class="headshot-card"
-            type="button"
-            data-image="assets/headshot-commercial.jpg"
-            data-label="Commercial headshot"
-          >
+          </figure>
+          <figure class="headshot-card">
             <img
-              src="assets/headshot-commercial.jpg"
-              alt="Commercial headshot of Aidan Rex Cook"
+              src="assets/headshot-navy-neutral.jpg"
+              alt="Straight-on headshot of Aidan Rex Cook in a navy jacket"
             >
-            <span>Commercial</span>
-          </button>
-          <button
-            class="headshot-card"
-            type="button"
-            data-image="assets/headshot-editorial.JPG"
-            data-label="Editorial headshot"
-          >
+          </figure>
+          <figure class="headshot-card">
             <img
               src="assets/headshot-editorial.JPG"
               alt="Editorial headshot of Aidan Rex Cook"
             >
-            <span>Editorial</span>
-          </button>
+          </figure>
         </div>
-        <figure class="feature-headshot">
-          <img
-            id="featured-headshot"
-            src="assets/headshot-theatrical.JPG"
-            alt="Theatrical headshot of Aidan Rex Cook"
-          >
-          <figcaption id="featured-caption">Theatrical headshot</figcaption>
-        </figure>
       </section>
 
       <section class="reel-section" id="reel" aria-labelledby="reel-title">
@@ -196,16 +182,11 @@
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
         <div>
           <p class="eyebrow">Representation</p>
-          <h2 id="contact-title">Kreativ Media Partners</h2>
-          <div class="representation-actions">
-            <a class="button primary" href="https://kreativartists.com/" target="_blank" rel="noopener">kreativartists.com</a>
-            <a class="button instagram-button" href="https://www.instagram.com/kreativartists/" target="_blank" rel="noopener">@kreativartists</a>
-          </div>
+          <h2 id="contact-title">Big Dreams Talent</h2>
+          <p class="agency-note">Horizon Talent Management - Commercial</p>
         </div>
         <address>
-          <a href="mailto:twin@kreativartists.com">twin@kreativartists.com</a>
-          <a href="tel:+13175448124">(317) 544-8124</a>
-          <span>Los Angeles, CA</span>
+          <a href="mailto:aidanrexcook@gmail.com">aidanrexcook@gmail.com</a>
         </address>
       </section>
     </main>
@@ -215,6 +196,5 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="script.js"></script>
   </body>
 </html>
