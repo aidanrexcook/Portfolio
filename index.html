@@ -9,7 +9,7 @@
       content="Actor portfolio with cinematic headshots, reel video, selected credits, and booking contact."
     >
     <link rel="preconnect" href="https://images.unsplash.com">
-    <link rel="stylesheet" href="styles.css?v=20260715-8">
+    <link rel="stylesheet" href="styles.css?v=20260715-13">
   </head>
   <body>
     <header class="site-header" aria-label="Primary navigation">
@@ -28,16 +28,11 @@
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <picture>
-          <source
-            media="(max-width: 700px)"
-            srcset="assets/headshot-navy-soft.jpg"
-          >
-          <img
-            src="assets/headshot-navy-soft.jpg"
-            alt="Close-up headshot of Aidan Rex Cook in a navy zip jacket"
-          >
-        </picture>
+        <img
+          src="./assets/hero-main.jpg"
+          alt="Close-up headshot of Aidan Rex Cook in a navy zip jacket"
+          onerror="this.onerror=null;this.src='./assets/headshot-navy-soft.jpg';"
+        >
         <div class="hero-content">
           <h1 id="hero-title"><span>Aidan</span><span>Rex Cook</span></h1>
           <p class="hero-copy">
@@ -90,34 +85,74 @@
         </div>
         <div class="headshot-grid">
           <figure class="headshot-card">
-            <img
-              src="assets/headshot-green.jpg"
-              alt="Headshot of Aidan Rex Cook in a gold shirt against a green background"
+            <a
+              class="headshot-link"
+              href="./assets/headshot-green.jpg"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size green-background headshot in a new tab"
             >
+              <img
+                src="assets/headshot-green.jpg"
+                alt="Headshot of Aidan Rex Cook in a gold shirt against a green background"
+              >
+            </a>
           </figure>
           <figure class="headshot-card">
-            <img
-              src="assets/headshot-navy-soft.jpg"
-              alt="Headshot of Aidan Rex Cook in a navy jacket with a subtle smile"
+            <a
+              class="headshot-link"
+              href="./assets/headshot-navy-soft.jpg"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size navy-jacket headshot with a subtle smile in a new tab"
             >
+              <img
+                src="assets/headshot-navy-soft.jpg"
+                alt="Headshot of Aidan Rex Cook in a navy jacket with a subtle smile"
+              >
+            </a>
           </figure>
           <figure class="headshot-card">
-            <img
-              src="assets/headshot-theatrical.JPG"
-              alt="Theatrical headshot of Aidan Rex Cook"
+            <a
+              class="headshot-link"
+              href="./assets/headshot-theatrical.JPG"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size theatrical headshot in a new tab"
             >
+              <img
+                src="assets/headshot-theatrical.JPG"
+                alt="Theatrical headshot of Aidan Rex Cook"
+              >
+            </a>
           </figure>
           <figure class="headshot-card">
-            <img
-              src="assets/headshot-navy-neutral.jpg"
-              alt="Straight-on headshot of Aidan Rex Cook in a navy jacket"
+            <a
+              class="headshot-link"
+              href="./assets/headshot-navy-neutral.jpg"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size straight-on navy-jacket headshot in a new tab"
             >
+              <img
+                src="assets/headshot-navy-neutral.jpg"
+                alt="Straight-on headshot of Aidan Rex Cook in a navy jacket"
+              >
+            </a>
           </figure>
           <figure class="headshot-card">
-            <img
-              src="assets/headshot-editorial.JPG"
-              alt="Editorial headshot of Aidan Rex Cook"
+            <a
+              class="headshot-link"
+              href="./assets/headshot-editorial.JPG"
+              target="_blank"
+              rel="noopener"
+              aria-label="Open full-size editorial headshot in a new tab"
             >
+              <img
+                src="assets/headshot-editorial.JPG"
+                alt="Editorial headshot of Aidan Rex Cook"
+              >
+            </a>
           </figure>
         </div>
       </section>
